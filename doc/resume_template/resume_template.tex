@@ -1,0 +1,179 @@
+% Welcome to the simple Undergraduate Complexity Research CV-resume template!
+% Please delete any sections that do not apply to your past experiences. We do not expect that applicants will have itmes for all of the sections included here. You can also rename or revise sections to best fit with your personal accomplishments.
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\setlength{\footskip}{10pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{0.0in}
+\addtolength{\evensidemargin}{0.0in}
+\addtolength{\textwidth}{0.0in}
+\addtolength{\topmargin}{0.2in}
+\addtolength{\textheight}{0.0in}
+
+
+\urlstyle{same}
+
+%\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \bf\vspace{2pt}
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-4pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-10pt}
+}
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\begin{document}
+
+
+\begin{center}
+    {\Huge \textbf{TEO YU JIE}} \\ \vspace{3pt}
+    \href{{https://github.com/yujieteo}}{\color{blue}Github} |
+    E-mail: \href{mailto:{yujie@protonmail.com}}{\color{blue}yujie@protonmail.com} |
+    \href{https://www.linkedin.com/in/yujieteo/}{\color{blue}LinkedIn} |
+    Phone: (+65) 8332 4860
+  \end{center}
+
+%-----------OTHER EXPERIENCE-----------
+\section{Work}
+% if you have been employed, do volunteer activities, or have held other formal or informal jobs, you can list them here.   
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Machine Learning and Mechanical Simulation Intern}{Jan 2023 - May 2023}
+      {Advanced Micro Devices ("AMD")}{Singapore}
+      \resumeItemListStart
+        \small
+        \resumeItem{Started as the first user of \texttt{PyANSYS} in entire company, 
+        resulting in new stochastic finite element analysis
+        capabilities.}
+        \resumeItem{Applied \texttt{PyANSYS} 
+        to feed Fusion Processors ('FP') bend test simulation
+        data into generative adversarial network for hybridised machine learning.}
+        \resumeItem{Created fast simulated visualisation
+        of package failure that reduces computation time by 99.5\%
+        and saved 300+ hours.}
+        \resumeItem{Developed best-known laboratory practice and software 
+        use for dynamic mechanical analysis and digital image correlation in 
+        Python, Golang, and SciLab.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Science Intern}{May 2021 - Aug 2021}
+      {KiteSense}{Singapore}
+      \resumeItemListStart
+        \small\resumeItem{Led design for synthetic data curation to be fed into MongoDB (SQL) for data engineering pipeline
+        resulting in a fast 2 month alpha-test.}
+        \resumeItem{Managed first design for data visualisation and analytics as part of a 
+        (Tableau/Figma/Adobe CC) successful first launch.}
+        \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------OTHER INTERESTS-----------
+\section{Projects}
+% Also an optional section, for any hobbies, sports, artistic and musical pursuits, etc. that you would like to include. You can include as many or as few as you like: delete or add as needed. 
+\resumeSubHeadingListStart
+  \resumeSubheading
+  {Programming Projects}{Current}{}{}
+  \resumeItemListStart
+    \small
+    \resumeItem{Wrote a Gentoo distribution maintenance script
+    that compiles packages and does a GLSA check in POSIX shell.}
+    \resumeItem{Created a program that organises
+    source code and performs a \texttt{git init} in Go, 
+    saving time in organizing large code-bases.}
+    \resumeItem{Curated ideas in
+    statistics (Kelly bets, mutual information, central limit theorem)
+    and engineering
+    (flight envelope, shaft design, Wagner aeroelastic flutter)
+    using MATLAB and Python.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Ogden phenomenology of hydrogel fatigue}{Current}{Nanyang Technological University}{Singapore}
+
+      \resumeItemListStart
+        \small
+        \resumeItem{Programmed a new
+        first-iteration parametric fit using Ogden phenomenology in MATLAB.}
+        \resumeItem{Simulated fracture of inhomogenous
+        hydrogel using MATLAB-generated material input and meshing using ABAQUS
+        and FORTRAN, being part of one of the first research groups to study
+        simulated stochastic inhomogenous hydrogel crack morphology.}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+% This section can include programming or spoken languages, text editing and general software knowledge, certifications, version control or project management tools, or other skills that might be relevant. You can include as many or as few as you like: delete or add as needed.  
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \normalsize{\item{
+     \textbf{Programming:}{ C, FORTRAN, Go, MATLAB, Python, Scilab, Shell} \\
+     \textbf{Engineering:}{ ABAQUS, ANSYS (MAPDL), Solidworks, PyANSYS}\\
+     }}
+ \end{itemize}
+
+
+%-----------EDUCATION-----------
+% Please list your current institution first and then past schools in reverse chronology. No need for GPA, etc. You do not need to include high school but may do so if there are accomplishments you would like to highlight.
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {Nanyang Technological University}{Aug 2020 - Dec 2023}
+        {Aerospace Engineering (Specialisation in Mechanical Engineering)}{Singapore} 
+        
+        \resumeItemListStart
+        \small
+        \resumeItem{GPA: 4.65/5.00 (Honours, Highest Distinction)}
+        \resumeItem{Courses: Aeroelasticity, Machine/Aircraft Design, Vibration, Power Electronics,
+        Signal Processing, Control, Artificial Intelligence}
+        \resumeItem{Peer Tutor for Data Science and AI Module to 210 peers (\texttt{numpy}, \texttt{pandas})}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
